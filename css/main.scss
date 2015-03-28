@@ -1,1 +1,66 @@
 @import 'reset';
+
+
+@font-face {
+font-family: 'Infinity';
+src: url('../fonts/Infinity.ttf');
+src: local('Infinity'), local('Infinity'), url('../fonts/Infinity.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Raleway';
+src: url('../fonts/Raleway.ttf');
+src: local('Raleway'), local('Raleway'), url('../fonts/Raleway.ttf') format('truetype');
+}
+
+$darkblue: #141d26;
+$orange: #F4B350;
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+
+nav{
+	background: $darkblue;
+	height: 40px;
+	position: fixed;
+	width: 100%;
+	.navbar{
+		font-size: 0;
+		width: 100%;
+		li{
+			display: inline-block;
+			font-size: 20px;
+			width: 15%;
+			text-align: center;
+			color: white;
+			padding-top: 0px;
+			a{
+				text-transform: uppercase;
+				font-family: Raleway;
+				transition: .4s ease;
+				&:hover{
+					color: $orange;
+				}
+			}
+			&.logo{
+				width: 40%;
+				font-size: 30px;
+				padding-top: 8px;
+				color: $orange;
+			}
+
+		}
+	}
+}
+
+p{
+	padding-top: 50px;
+	font-family: 'Georgia';
+	font-size: 50px;
+	width: 50%;
+	margin: auto;
+}

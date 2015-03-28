@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-	$('li').css('color', 'red');
-
+$('body').hide().fadeIn(1100);
 
 
 
