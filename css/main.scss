@@ -23,6 +23,10 @@ body{
 	font-family: Gerogia, sans;
 }
 
+ul{
+	margin: auto;
+	max-width: 1500px;
+}
 
 
 
@@ -65,7 +69,7 @@ nav{
 	}
 }
 
-p{
+p#info{
 	padding-top: 50px;
 	font-family: 'Georgia';
 	font-size: 50px;
@@ -77,6 +81,7 @@ img.homepagepic{
 	width: 100%;
 	height: auto;
 }
+
 
 div.homescreen{
 	width: 100%;
@@ -110,7 +115,7 @@ div.homescreen{
   	height: 50px;
   	border-radius: 5px;
   	background: #ddd;
-  	opacity: .4;
+  	// opacity: .4;
   	border: none;
   	color: white;
   	a{
@@ -124,6 +129,49 @@ div.homescreen{
   	}
   }
 }
+
+footer{
+	width: 100%;
+	background: $darkblue;
+	height: 50px;
+	margin-top: 30px;
+	p{
+		text-align: center;
+		padding-top: 10px;
+	}
+	span{
+		font-size: 20px;
+		color: $orange;
+	}
+}
+
+
+
+
+
+section#dl{
+	height: 100px;
+	padding: 50px 0;
+	div.container{
+		text-align: center;
+	}
+	img.appstore{
+		width: 350px;
+		height: auto;
+		margin: auto;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
