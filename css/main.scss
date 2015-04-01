@@ -1,6 +1,7 @@
+// Eric meyer reset.css file
 @import 'reset';
 
-
+// ---------------FONTS-----------------
 @font-face {
 font-family: 'Infinity';
 src: url('../fonts/Infinity.ttf');
@@ -11,9 +12,43 @@ font-family: 'Raleway';
 src: url('../fonts/Raleway.ttf');
 src: local('Raleway'), local('Raleway'), url('../fonts/Raleway.ttf') format('truetype');
 }
+// -----------------------------------------
 
+// ------------------VARIABLES ----------------------
 $darkblue: #141d26;
 $orange: #F4B350;
+
+$phone: "(min-width: 481px) and (max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 991px)";
+$desktop: "(min-width: 992px) and (max-width: 1199px)";
+$largedesktop: "(min-width: 1200px)";
+
+@mixin phone {
+	@media #{$phone} {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media #{$tablet} {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media #{$desktop} {
+		@content;
+	}
+}
+
+@mixin largedesktop {
+	@media #{$largedesktop} {
+		@content;
+	}
+}
+
+
+// -------------------------------------------------
 
 html{
 	height: 100%;
@@ -37,6 +72,9 @@ ul{
 nav{
 	background: $darkblue;
 	height: 40px;
+	@include phone{
+		height: 100px;
+	}
 	position: fixed;
 	width: 100%;
 	border-bottom: 1px solid black;
@@ -166,6 +204,14 @@ section#dl{
 
 	}
 }
+
+
+
+
+
+// Media Query part
+
+
 
 
 
