@@ -1,5 +1,6 @@
 // Eric meyer reset.css file
-@import 'reset';
+// @import 'reset';
+@import 'bootstrap';
 
 // ---------------FONTS-----------------
 @font-face {
@@ -17,6 +18,8 @@ src: local('Raleway'), local('Raleway'), url('../fonts/Raleway.ttf') format('tru
 // ------------------VARIABLES ----------------------
 $darkblue: #141d26;
 $orange: #F4B350;
+
+html.index1{
 
 $phone: "(min-width: 481px) and (max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 991px)";
@@ -72,9 +75,6 @@ ul{
 nav{
 	background: $darkblue;
 	height: 40px;
-	@include phone{
-		height: 100px;
-	}
 	position: fixed;
 	width: 100%;
 	border-bottom: 1px solid black;
@@ -205,13 +205,45 @@ section#dl{
 	}
 }
 
+}
 
 
 
 
-// Media Query part
+html.index2{
+	body {
+	  padding-top: 50px;
+	}
+	.starter-template {
+	  padding: 40px 15px;
+	  text-align: center;
+	}
+}
 
 
+
+
+
+// nav.navbar{
+// 	background: $darkblue;
+// 	height: 60px;
+// 	ul.navbar-nav{
+// 		li a{
+// 			color: $orange;
+// 		}
+// 		li.active a{
+// 			color: red;
+// 		}
+// 	}
+// 	a.navbar-brand{
+// 		color: red;
+// 		font-size: 50px;
+// 		&:hover{
+// 			color: blue;
+// 			transition: 2s ease;
+// 		}
+// 	}
+// }
 
 
 
