@@ -218,11 +218,6 @@ section#dl{
 html.index2{
 	height: 100%;
 	width: 100%;
-	body {
-		@media (max-width: 992px){
-			padding-top: 50px;
-		}
-	}
 	nav.navbar{
 		text-transform: uppercase;
 		font-family: 'Raleway', sans-serif;
@@ -262,21 +257,45 @@ html.index2{
 	}
 
 div.homePageContainer{
-	// background: url(../img/homepicsmaller2.jpg) no-repeat center center; 
- //  -webkit-background-size: 100% auto;
- //  -moz-background-size: 100% auto;
- //  -o-background-size: 100% auto;
- //  background-size: 100% auto;
- //  -webkit-background-image: contain;
- //  background-image: contain;
- //  background-position: left top;
- background: yellow;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	background: url(../img/homepic3.jpg) no-repeat center center; 
+	@media (min-width: 768px){
+		background: url(../img/homepicsmaller2.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-image: cover;
+  background-size: cover;
 	div.row{
 			div.homepage{
-				height: 200px;
+				height: 600px;
 				@media (min-width: 768px){
 					height: 800px;
 				}
+				h2, h3{
+					font-weight: 200;
+					width: 100%;
+					color: white;
+					font-size: 25px;
+					@media (min-width: 768px){
+						font-size: 50px;
+					}
+				}
+				h3{
+					font-size: 20px;
+					@media (min-width: 768px){
+						font-size: 35px;
+					}
+				}
+				button.btn-lg{
+					margin-top: 250px;
+					@media (min-width: 768){
+						margin-top: 400px;
+					}
+				}
+
 		}
 	}
 }
