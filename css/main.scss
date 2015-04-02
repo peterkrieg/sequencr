@@ -19,6 +19,14 @@ src: local('Raleway'), local('Raleway'), url('../fonts/Raleway.ttf') format('tru
 $darkblue: #141d26;
 $orange: #F4B350;
 
+
+
+
+
+
+
+
+// -----------THIS IS START OF INDEX 1----------------------
 html.index1{
 
 $phone: "(min-width: 481px) and (max-width: 767px)";
@@ -69,7 +77,6 @@ ul{
 	margin: auto;
 	max-width: 1500px;
 }
-
 
 
 nav{
@@ -187,10 +194,6 @@ footer{
 	}
 }
 
-
-
-
-
 section#dl{
 	height: 100px;
 	padding: 50px 0;
@@ -207,43 +210,91 @@ section#dl{
 
 }
 
-
+// This is CSS for the index2, which I will eventually move to index1 when ready
 
 
 html.index2{
 	body {
-	  padding-top: 50px;
+	  // padding-top: 50px;
 	}
-	.starter-template {
-	  padding: 40px 15px;
-	  text-align: center;
+	nav.navbar{
+		text-transform: uppercase;
+		font-family: 'Raleway', sans-serif;
+		background: $darkblue;
+		div.navbar-header{
+			a.navbar-brand{
+				padding-top: 18px;
+				font-size: 35px;
+				color: $orange;
+				transition: 1s ease;
+				&:hover{
+					opacity: .2;
+				}
+			}
+		}
+
+		div#navbar{
+			float: right;
+			ul.nav{
+				li{
+					margin-right: 20px;
+					@media (max-width: 992px){
+						margin-right: 5px;
+					}
+					a{
+						color: white;
+						font-size: 20px;
+						transition: .4s ease;
+						&:hover{
+							color: $orange;
+						}
+					}
+				}
+			}
+
+		}
 	}
+
+div.container-fluid{
+	// background: yellow;
+	width: 100%;
+	div.row{
+		div.col-lg-12{
+			// width: 100%;
+			div.homepage{
+				height: 1000px;
+				width: 100%;
+				// background: tomato;
+			}
+		}
+	}
+}
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
 
 
 
-// nav.navbar{
-// 	background: $darkblue;
-// 	height: 60px;
-// 	ul.navbar-nav{
-// 		li a{
-// 			color: $orange;
-// 		}
-// 		li.active a{
-// 			color: red;
-// 		}
-// 	}
-// 	a.navbar-brand{
-// 		color: red;
-// 		font-size: 50px;
-// 		&:hover{
-// 			color: blue;
-// 			transition: 2s ease;
-// 		}
-// 	}
-// }
 
 
 
