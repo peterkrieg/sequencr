@@ -5,9 +5,9 @@
 // ---------------FONTS-----------------
 
 @font-face {
-font-family: 'Raleway';
-src: url('../fonts/Raleway.ttf');
-src: local('Raleway'), local('Raleway'), url('../fonts/Raleway.ttf') format('truetype');
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway.ttf');
+	src: local('Raleway'), local('Raleway'), url('../fonts/Raleway.ttf') format('truetype');
 }
 // -----------------------------------------
 
@@ -17,13 +17,6 @@ $orange: #F4B350;
 
 
 
-
-
-
-
-
-// -----------THIS IS START OF INDEX 1----------------------
-html.index1{
 
 $phone: "(min-width: 481px) and (max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 991px)";
@@ -50,207 +43,53 @@ $largedesktop: "(min-width: 1200px)";
 
 @mixin largedesktop {
 	@media #{$largedesktop} {
-		@content;
+		@content; 
 	}
 }
 
 
-// -------------------------------------------------
+// ---------------------
 
 html{
 	height: 100%;
-}
-
-a{
-	text-decoration: none;
-	color: inherit;
-}
-body{
-	font-family: Gerogia, sans;
-}
-
-ul{
-	margin: auto;
-	max-width: 1500px;
-}
-
-
-nav{
-	background: $darkblue;
-	height: 40px;
-	position: fixed;
 	width: 100%;
-	border-bottom: 1px solid black;
-	.navbar{
-		font-size: 0;
-		width: 100%;
-		li{
-			display: inline-block;
+}
+nav.navbar{
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	background: $darkblue;
+	div.navbar-header{
+		a.navbar-brand{
+			padding-top: 18px;
 			font-size: 20px;
-			width: 15%;
-			text-align: center;
-			color: white;
-			padding-top: 0px;
-			a{
-				text-transform: uppercase;
-				font-family: Raleway;
-				transition: .4s ease;
-				&:hover{
-					color: $orange;
-				}
-			}
-			&.logo{
-				width: 40%;
-				font-size: 30px;
-				padding-top: 8px;
-				color: $orange;
-				transition: 1s ease;
-				&:hover{
-					opacity: .2;
-				}
-			}
-
-		}
-	}
-}
-
-p#info{
-	padding-top: 50px;
-	font-family: 'Georgia';
-	font-size: 50px;
-	width: 50%;
-	margin: auto;
-}
-
-img.homepagepic{
-	width: 100%;
-	height: auto;
-}
-
-
-div.homescreen{
-	width: 100%;
-	height: 800px;
-  background: url(../img/homepicsmaller2.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  h1, h2{
-  	font-family: Raleway;
-  	color: white;
-  	position: absolute;
-  	font-weight: bold;
-  }
-  h1{
-  	font-size: 50px;
-  	left: 60%;
-  	top: 10%;
-  }
-  h2{
-  	font-size: 40px;
-  	left: 65%;
-  	top: 20%;
-  }
-  button.learnmore{
-  	position: absolute;
-  	left: 30%;
-  	top: 80%;
-  	width: 150px;
-  	height: 50px;
-  	border-radius: 5px;
-  	background: #ddd;
-  	// opacity: .4;
-  	border: none;
-  	color: white;
-  	a{
-  		font-size: 20px;
-  		font-family: Georgia, sans;
-  		opacity: 1;
-  		color: black;
-  		&:hover{
-  			color: $orange;
-  		}
-  	}
-  }
-}
-
-footer{
-	width: 100%;
-	background: $darkblue;
-	height: 50px;
-	margin-top: 30px;
-	p{
-		text-align: center;
-		padding-top: 10px;
-	}
-	span{
-		font-size: 20px;
-		color: $orange;
-	}
-}
-
-section#dl{
-	height: 100px;
-	padding: 50px 0;
-	div.container{
-		text-align: center;
-	}
-	img.appstore{
-		width: 350px;
-		height: auto;
-		margin: auto;
-
-	}
-}
-
-}
-
-
-
-// This is CSS for the index2, which I will eventually move to index1 when ready
-
-
-html.index2{
-	height: 100%;
-	width: 100%;
-	nav.navbar{
-		text-transform: uppercase;
-		font-family: 'Raleway', sans-serif;
-		background: $darkblue;
-		div.navbar-header{
-			a.navbar-brand{
-				padding-top: 18px;
-				font-size: 20px;
-				color: $orange;
-				transition: 1s ease;
-				&:hover{
-					opacity: .2;
-				}
+			color: $orange;
+			transition: 1s ease;
+			&:hover{
+				opacity: .2;
 			}
 		}
+	}
 
-		div#navbar{
-			float: right;
-			ul.nav{
-				li{
-					// margin-right: 20px;
-					@media (max-width: 992px){
-						margin-right: 5px;
-					}
-					a{
-						color: white;
-						font-size: 20px;
-						transition: .4s ease;
-						&:hover{
-							color: $orange;
-						}
+	div#navbar{
+		float: right;
+		ul.nav{
+			li{
+				// margin-right: 20px;
+				@media (max-width: 992px){
+					margin-right: 5px;
+				}
+				a{
+					color: white;
+					font-size: 20px;
+					transition: .4s ease;
+					&:hover{
+						color: $orange;
 					}
 				}
 			}
-
 		}
 	}
+}
 
 div.homePageContainer{
 	text-align: center;
@@ -260,58 +99,55 @@ div.homePageContainer{
 		background: url(../img/homepicsmaller2.jpg) no-repeat center center; 
 		background-size: cover;
 	}
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-image: cover;
-  background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-image: cover;
+	background-size: cover;
 	div.row{
-			div.homepage{
-				height: 600px;
+		div.homepage{
+			height: 600px;
+			@media (min-width: 768px){
+				height: 800px;
+			}
+			h2, h3{
+				font-weight: 200;
+				width: 100%;
+				color: white;
+				font-size: 25px;
 				@media (min-width: 768px){
-					height: 800px;
+					font-size: 50px;
 				}
-				h2, h3{
-					font-weight: 200;
-					width: 100%;
+			}
+			h3{
+				font-size: 20px;
+				@media (min-width: 768px){
+					font-size: 35px;
+				}
+			}
+			button.btn-lg{
+				margin-top: 250px;
+				@media (min-width: 768px){
+					margin-top: 400px;
+				}
+				border: none;
+				background: $darkblue;
+				a{
 					color: white;
-					font-size: 25px;
-					@media (min-width: 768px){
-						font-size: 50px;
-					}
-				}
-				h3{
-					font-size: 20px;
-					@media (min-width: 768px){
-						font-size: 35px;
-					}
-				}
-				button.btn-lg{
-					margin-top: 250px;
-					@media (min-width: 768px){
-						margin-top: 400px;
-					}
-					border: none;
-					background: $darkblue;
-					a{
-						color: white;
-						&:hover{
-							color: $orange;
-							text-decoration: none;
-							&{
-								background: red;
-							}
+					&:hover{
+						color: $orange;
+						text-decoration: none;
+						&{
+							background: red;
 						}
 					}
 				}
-
+			}
 		}
 	}
 }
 
 
 
-	
-	
 
 
 
@@ -327,7 +163,9 @@ div.homePageContainer{
 
 
 
-}
+
+
+
 
 
 
