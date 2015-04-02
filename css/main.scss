@@ -210,12 +210,18 @@ section#dl{
 
 }
 
+
+
 // This is CSS for the index2, which I will eventually move to index1 when ready
 
 
 html.index2{
+	height: 100%;
+	width: 100%;
 	body {
-	  // padding-top: 50px;
+		@media (max-width: 992px){
+			padding-top: 50px;
+		}
 	}
 	nav.navbar{
 		text-transform: uppercase;
@@ -224,7 +230,7 @@ html.index2{
 		div.navbar-header{
 			a.navbar-brand{
 				padding-top: 18px;
-				font-size: 35px;
+				font-size: 20px;
 				color: $orange;
 				transition: 1s ease;
 				&:hover{
@@ -237,7 +243,7 @@ html.index2{
 			float: right;
 			ul.nav{
 				li{
-					margin-right: 20px;
+					// margin-right: 20px;
 					@media (max-width: 992px){
 						margin-right: 5px;
 					}
@@ -255,17 +261,22 @@ html.index2{
 		}
 	}
 
-div.container-fluid{
-	// background: yellow;
-	width: 100%;
+div.homePageContainer{
+	// background: url(../img/homepicsmaller2.jpg) no-repeat center center; 
+ //  -webkit-background-size: 100% auto;
+ //  -moz-background-size: 100% auto;
+ //  -o-background-size: 100% auto;
+ //  background-size: 100% auto;
+ //  -webkit-background-image: contain;
+ //  background-image: contain;
+ //  background-position: left top;
+ background: yellow;
 	div.row{
-		div.col-lg-12{
-			// width: 100%;
 			div.homepage{
-				height: 1000px;
-				width: 100%;
-				// background: tomato;
-			}
+				height: 200px;
+				@media (min-width: 768px){
+					height: 800px;
+				}
 		}
 	}
 }
