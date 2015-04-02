@@ -92,17 +92,19 @@ nav.navbar{
 }
 
 div.homePageContainer{
+	width: 100%;
+	background: gold;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	background: url(../img/homepic3.jpg) no-repeat center center; 
-	@media (min-width: 768px){
-		background: url(../img/homepicsmaller2.jpg) no-repeat center center; 
-		background-size: cover;
-	}
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-webkit-background-image: cover;
-	background-size: cover;
+
+	// background: url(../img/homepic3.jpg) no-repeat center center; 
+	// @media (min-width: 768px){
+	// 	background: url(../img/homepicsmaller2.jpg) no-repeat center center; 
+	// }
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	// -webkit-background-image: cover;
+	// background-size: cover;
 	div.row{
 		div.homepage{
 			height: 600px;
@@ -131,15 +133,20 @@ div.homePageContainer{
 				}
 				border: none;
 				background: $darkblue;
-				a{
-					color: white;
-					&:hover{
+				transition: .5s ease;
+				&:hover{
+					transform: scale(1.2);
+					transition: 1.5s ease;
+					span{
 						color: $orange;
-						text-decoration: none;
-						&{
-							background: red;
-						}
 					}
+				}
+				&:focus{
+					outline: none;
+				}
+				span{
+					color: white;
+					transition: .5s ease;
 				}
 			}
 		}
@@ -149,8 +156,22 @@ div.homePageContainer{
 
 
 
+div.download{
+	text-align: center;
+	img.appstore{
+		width: 80%;
+		@media (min-width: 767px){
+			width: 300px;
+			height: auto;
+		}
+	}
+}
 
-
+div.footer{
+	background: $darkblue;
+	color: $orange;
+	text-align: center;
+}
 
 
 
