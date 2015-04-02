@@ -13,7 +13,7 @@ $('a.page-scroll').bind('click', function(event) {
         event.preventDefault();
     });
 
-
+$('nav').hide();
 
 
 

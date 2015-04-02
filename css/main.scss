@@ -3,11 +3,7 @@
 @import 'bootstrap';
 
 // ---------------FONTS-----------------
-@font-face {
-font-family: 'Infinity';
-src: url('../fonts/Infinity.ttf');
-src: local('Infinity'), local('Infinity'), url('../fonts/Infinity.ttf') format('truetype');
-}
+
 @font-face {
 font-family: 'Raleway';
 src: url('../fonts/Raleway.ttf');
@@ -291,8 +287,20 @@ div.homePageContainer{
 				}
 				button.btn-lg{
 					margin-top: 250px;
-					@media (min-width: 768){
+					@media (min-width: 768px){
 						margin-top: 400px;
+					}
+					border: none;
+					background: $darkblue;
+					a{
+						color: white;
+						&:hover{
+							color: $orange;
+							text-decoration: none;
+							&{
+								background: red;
+							}
+						}
 					}
 				}
 
