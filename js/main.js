@@ -13,9 +13,17 @@ $('a.page-scroll').bind('click', function(event) {
         event.preventDefault();
     });
 
-$('nav').hide();
+// $('nav').hide();
 
 
+
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 300) {
+        $(".navbar-fixed-top").addClass("top-nav-appear");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-appear");
+    }
+});
 
 
 

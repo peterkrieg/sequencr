@@ -54,6 +54,24 @@ html{
 	height: 100%;
 	width: 100%;
 }
+body{
+	// padding-top: 30px;
+}
+
+nav.navbar-fixed-top{
+	position: fixed;
+	top: -50px;
+	transition: .5s ease;
+}
+
+nav.top-nav-appear{
+	position: fixed;
+	top: 0px;
+	transition: 1s ease;
+}
+
+
+
 nav.navbar{
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
@@ -69,6 +87,10 @@ nav.navbar{
 			}
 		}
 	}
+
+
+
+
 
 	div#navbar{
 		float: right;
@@ -139,7 +161,7 @@ div.homePageContainer{
 				background: $darkblue;
 				transition: .5s ease;
 				&:hover{
-					transform: scale(1.2);
+					transform: scale(1.1);
 					transition: 1.5s ease;
 					span{
 						color: $orange;
@@ -157,13 +179,18 @@ div.homePageContainer{
 	}
 }
 
+div#about{
+	padding-top: 100px;
+	background: #ddd;
+}
 
 
 
-div.download{
+
+div#download{
 	text-align: center;
 	img.appstore{
-		width: 80%;
+		width: 60%;
 		@media (min-width: 767px){
 			width: 300px;
 			height: auto;
@@ -171,11 +198,35 @@ div.download{
 	}
 }
 
+div#faq{
+	height: 800px;
+	background: lightblue;
+}
+
+
+
+
+
+
+
 div.footer{
 	width: 100%;
 	background: $darkblue;
 	color: $orange;
 	text-align: center;
+	p{
+		padding: 10px 0;
+		font-size: 15px;
+	}
+}
+
+
+div.test{
+	background: tomato;
+	div.container{
+		background: blue;
+	}
+
 }
 
 
