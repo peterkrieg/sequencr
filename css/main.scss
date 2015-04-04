@@ -4,11 +4,11 @@
 
 // ---------------FONTS-----------------
 
-@font-face {
-	font-family: 'Raleway';
-	src: url('../fonts/Raleway.ttf');
-	src: local('Raleway'), local('Raleway'), url('../fonts/Raleway.ttf') format('truetype');
-}
+// @font-face {
+// 	font-family: 'Raleway';
+// 	src: url('../fonts/Raleway.ttf');
+// 	src: local('Raleway'), local('Raleway'), url('../fonts/Raleway.ttf') format('truetype');
+// }
 // -----------------------------------------
 
 // ------------------VARIABLES ----------------------
@@ -58,6 +58,9 @@ body{
 	position: relative
 	// padding-top: 30px;
 }
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Raleway', sans-serif;
+}
 
 nav.navbar-fixed-top{
 	opacity: 0;
@@ -76,13 +79,14 @@ nav.top-nav-appear{
 
 
 nav.navbar{
+	font-weight: 200;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
 	background: $darkblue;
 	div.navbar-header{
 		a.navbar-brand{
 			padding-top: 18px;
-			font-size: 20px;
+			font-size: 30px;
 			color: $orange;
 			transition: 1s ease;
 			&:hover{
@@ -91,14 +95,17 @@ nav.navbar{
 		}
 	}
 
-
-
-
-
 	div#navbar{
+		// font-weight: 300;
 		float: right;
 		ul.nav{
 			li{
+				&.active{
+					a{
+						background: black;
+						transition: 1s ease;
+					}
+				}
 				// margin-right: 20px;
 				@media (max-width: 992px){
 					margin-right: 5px;
@@ -138,7 +145,7 @@ div.homePageContainer{
 		div.homepage{
 			height: 600px;
 			@media (min-width: 768px){
-				height: 700px;
+				height: 800px;
 			}
 			h2, h3{
 				font-weight: 200;
@@ -182,15 +189,25 @@ div.homePageContainer{
 	}
 }
 
+
 div#about{
 	padding-top: 100px;
 	background: #ddd;
+	height: 800px;
+	text-align: center;
+	h2{
+		padding-bottom: 50px;
+	}
+	img{
+		width: 100%;
+	}
 }
 
 
 
 
 div#download{
+	padding: 50px 0;
 	text-align: center;
 	img.appstore{
 		width: 60%;
@@ -202,8 +219,15 @@ div#download{
 }
 
 div#faq{
+	padding-top: 100px;
 	height: 800px;
 	background: lightblue;
+}
+
+div#contact{
+	padding-top: 100px;
+	height: 1000px;
+	background: gray;
 }
 
 
@@ -224,13 +248,6 @@ div.footer{
 }
 
 
-div.test{
-	background: tomato;
-	div.container{
-		background: blue;
-	}
-
-}
 
 
 
